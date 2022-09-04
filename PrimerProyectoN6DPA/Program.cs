@@ -1,8 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using PrimerProyectoN6DPA;
 
-Console.WriteLine("Hello, World!");
-
 string curso = "Desarrollo de ambiente web";
 int edad = 30;
 double salario = 1550.50;
