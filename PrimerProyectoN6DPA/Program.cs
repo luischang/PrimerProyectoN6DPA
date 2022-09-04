@@ -18,5 +18,31 @@ persona.dni = 44093892;
 persona.nombreCompleto = "Luis Chang";
 persona.edad = 30;
 
+var persona2 = new Persona()
+{
+    dni = 99388834,
+    nombreCompleto = "Juan Perez",
+    edad = 44
+};
 
+var persona3 = new Persona(28839388, "Eduardo Bardalez", 34);
+
+var personas = new List<Persona>();
+personas.Add(persona);
+personas.Add(persona2);
+personas.Add(persona3);
+
+foreach (var item in personas)
+{
+    Console.WriteLine(item.dni + " | " + item.nombreCompleto);
+}
+
+var personaBuscada = personas.Find(luis => luis.dni == 99388834);
+if (personaBuscada != null)
+{
+    Console.WriteLine("La persona buscada es: " + personaBuscada.dni + " | " + personaBuscada.nombreCompleto);
+}
+else {
+    Console.WriteLine("DNI no encontrado");
+}
 
